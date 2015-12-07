@@ -10,9 +10,6 @@
     # Log in to your Azure account
     Login-AzureRmAccount
 
-    # List all the subscriptions associated to your account
-    Get-AzureRmSubscription
-
     # Select a subscription 
     Set-AzureRmContext -SubscriptionId $SubscriptionId
 
