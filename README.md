@@ -1,8 +1,10 @@
 Analyzing StackExchange data with Azure Data Lake
 ============================================
-TBW
+This repository contains all the code & scripts for my 'Analyzing StackExchange data with Azure Data Lake' series.
 
-The series is seperated into four major blocks:
+This series will take you through the process of storing StackExchange data in Data Lake Store, aggregating all the User-data from all the websites into one file and gaining knowledge from it with Data Lake Analytics. After that we'll use PowerBI to visualize the gained knowledge.
+
+In [the introduction](https://tomkerkhove.ghost.io/2015/11/28/analyzing-stackexchange-data-with-azure-data-lake-introduction/) I've talked about the four major blocks in the series:
 
 1. Storing the data in Azure Data Lake Store or Azure Storage
 2. Aggregating the data with Azure Data Lake Analytics
