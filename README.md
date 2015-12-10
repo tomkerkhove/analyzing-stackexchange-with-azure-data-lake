@@ -6,7 +6,7 @@ This series will take you through the process of storing StackExchange data in D
 
 In [the introduction](https://tomkerkhove.ghost.io/2015/11/28/analyzing-stackexchange-data-with-azure-data-lake-introduction/) I've talked about the four major blocks in the series:
 
-1. Storing the data in Azure Data Lake Store or Azure Storage
+1. Storing the data in Azure Data Lake Store or Azure Storage ([post](analyzing-stackexchange-data-with-azure-data-lake-storing-the-data))
 2. Aggregating the data with Azure Data Lake Analytics
 3. Analyzing the data with Azure Data Lake Analytics
 4. Visualizing the data with Power BI
