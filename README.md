@@ -16,7 +16,19 @@ Stack Exchange has made their data available from all their websites under [Crea
 
 ![Stack Exchange Logo](./media/Stack-Exchange-Logo.png)
 
-We will use this data as a demo set as this reflect real-world data. In the first post we'll download and upload it to Azure in a cost-efficient manner. 
+We will use this data as a demo set as this reflect real-world data. The data contains information about every website by StackExchange going from users & posts to comments and votes and beyond.
+
+Here is an example of how the folder for `coffee-stackexchange-com` is structured: 
+
+	+ coffee-stackexchange-com
+		- Badges.xml
+		- Comments.xml
+		- PostHistory.xml
+		- PostLinks.xml
+		- Posts.xml
+		- Tags.xml
+		- Users.xml
+		- Votes.xml
 
 You can find all the data [here](https://archive.org/details/stackexchange).
 
