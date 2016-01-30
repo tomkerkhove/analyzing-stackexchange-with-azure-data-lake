@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>e25fdd58-8720-4bd7-9370-768ffb8d6231</ProjectGuid>
+    <OutputType>File</OutputType>
+    <AssemblyName>Algebra.xml</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <Name>StackExchange.Analytics.Scripts</Name>
+    <RootNamespace>StackExchange.Analytics.Scripts</RootNamespace>
+    <RuntimeVersion>default</RuntimeVersion>
+    <OutputStreamPath>C:\LocalRunDataRoot</OutputStreamPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <Import Project="$(AppData)\Microsoft\DataLake\MsBuild\1.0\Usql.targets" />
+  <PropertyGroup>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Aggregation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Script Include="Aggregation\AggregateBadges.usql">
+      <UseLocalComputeAccount>false</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>sandbox1337</ClusterComputeAccount>
+      <ClusterDatabase>stackexchange</ClusterDatabase>
+      <ClusterSchema>dbo</ClusterSchema>
+    </Script>
+    <Script Include="Aggregation\AggregateComments.usql">
+      <UseLocalComputeAccount>false</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>sandbox1337</ClusterComputeAccount>
+      <ClusterDatabase>stackexchange</ClusterDatabase>
+      <ClusterSchema>dbo</ClusterSchema>
+    </Script>
+    <Script Include="Aggregation\AggregatePostHistory.usql">
+      <UseLocalComputeAccount>false</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>sandbox1337</ClusterComputeAccount>
+      <ClusterDatabase>stackexchange</ClusterDatabase>
+      <ClusterSchema>dbo</ClusterSchema>
+    </Script>
+    <Script Include="Aggregation\AggregatePostLinks.usql">
+      <UseLocalComputeAccount>false</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>sandbox1337</ClusterComputeAccount>
+      <ClusterDatabase>stackexchange</ClusterDatabase>
+      <ClusterSchema>dbo</ClusterSchema>
+    </Script>
+    <Script Include="Aggregation\AggregatePosts.usql">
+      <UseLocalComputeAccount>false</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>sandbox1337</ClusterComputeAccount>
+      <ClusterDatabase>stackexchange</ClusterDatabase>
+      <ClusterSchema>dbo</ClusterSchema>
+    </Script>
+    <Script Include="Aggregation\AggregateTags.usql">
+      <UseLocalComputeAccount>false</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>sandbox1337</ClusterComputeAccount>
+      <ClusterDatabase>stackexchange</ClusterDatabase>
+      <ClusterSchema>dbo</ClusterSchema>
+    </Script>
+    <Script Include="Aggregation\AggregateUsers.usql">
+      <UseLocalComputeAccount>false</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>sandbox1337</ClusterComputeAccount>
+      <ClusterDatabase>stackexchange</ClusterDatabase>
+      <ClusterSchema>dbo</ClusterSchema>
+    </Script>
+    <Script Include="Aggregation\AggregateVotes.usql">
+      <UseLocalComputeAccount>false</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>sandbox1337</ClusterComputeAccount>
+      <ClusterDatabase>stackexchange</ClusterDatabase>
+      <ClusterSchema>dbo</ClusterSchema>
+    </Script>
+  </ItemGroup>
+  <ItemGroup>
+    <ScriptCode Include="Aggregation\AggregateBadges.usql.cs">
+      <DependentUpon>Aggregation\AggregateBadges.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="Aggregation\AggregateComments.usql.cs">
+      <DependentUpon>Aggregation\AggregateComments.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="Aggregation\AggregatePostHistory.usql.cs">
+      <DependentUpon>Aggregation\AggregatePostHistory.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="Aggregation\AggregatePostLinks.usql.cs">
+      <DependentUpon>Aggregation\AggregatePostLinks.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="Aggregation\AggregatePosts.usql.cs">
+      <DependentUpon>Aggregation\AggregatePosts.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="Aggregation\AggregateTags.usql.cs">
+      <DependentUpon>Aggregation\AggregateTags.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="Aggregation\AggregateUsers.usql.cs">
+      <DependentUpon>Aggregation\AggregateUsers.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="Aggregation\AggregateVotes.usql.cs">
+      <DependentUpon>Aggregation\AggregateVotes.usql</DependentUpon>
+    </ScriptCode>
+  </ItemGroup>
+</Project>

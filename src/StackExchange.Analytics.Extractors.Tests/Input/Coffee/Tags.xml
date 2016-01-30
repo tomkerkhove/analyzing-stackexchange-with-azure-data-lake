@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tags>
+  <row Id="1" TagName="storage" Count="24" ExcerptPostId="364" WikiPostId="363" />
+  <row Id="2" TagName="whole-bean" Count="7" />
+  <row Id="3" TagName="ground-coffee" Count="18" ExcerptPostId="1614" WikiPostId="1613" />
+  <row Id="4" TagName="drip-brew" Count="20" />
+  <row Id="6" TagName="hard-water" Count="1" />
+  <row Id="7" TagName="espresso-machine" Count="13" ExcerptPostId="1612" WikiPostId="1611" />
+  <row Id="8" TagName="tamping" Count="5" ExcerptPostId="2050" WikiPostId="2049" />
+  <row Id="9" TagName="roasting" Count="16" ExcerptPostId="1858" WikiPostId="1857" />
+  <row Id="10" TagName="espresso" Count="36" ExcerptPostId="1606" WikiPostId="1605" />
+  <row Id="11" TagName="crema" Count="8" ExcerptPostId="2048" WikiPostId="2047" />
+  <row Id="12" TagName="grinder" Count="10" />
+  <row Id="13" TagName="pour-over" Count="9" />
+  <row Id="14" TagName="doser" Count="1" />
+  <row Id="15" TagName="refrigeration" Count="1" />
+  <row Id="16" TagName="brewing-process" Count="61" ExcerptPostId="417" WikiPostId="416" />
+  <row Id="17" TagName="cleaning" Count="5" />
+  <row Id="18" TagName="caffeine" Count="28" ExcerptPostId="372" WikiPostId="371" />
+  <row Id="19" TagName="low-caffeine" Count="1" />
+  <row Id="20" TagName="beans" Count="23" ExcerptPostId="1581" WikiPostId="1580" />
+  <row Id="21" TagName="burr-grinder" Count="3" />
+  <row Id="22" TagName="backflush" Count="1" />
+  <row Id="23" TagName="maintenance" Count="5" />
+  <row Id="24" TagName="aeropress" Count="17" ExcerptPostId="1855" WikiPostId="1854" />
+  <row Id="25" TagName="aroma" Count="4" ExcerptPostId="358" WikiPostId="357" />
+  <row Id="26" TagName="health" Count="25" ExcerptPostId="1602" WikiPostId="1601" />
+  <row Id="28" TagName="rating" Count="2" />
+  <row Id="29" TagName="germany" Count="1" />
+  <row Id="30" TagName="strength" Count="8" />
+  <row Id="31" TagName="flavor" Count="43" ExcerptPostId="1560" WikiPostId="1559" />
+  <row Id="32" TagName="v60" Count="4" />
+  <row Id="33" TagName="growing" Count="5" />
+  <row Id="34" TagName="farming" Count="6" />
+  <row Id="35" TagName="shots" Count="1" />
+  <row Id="36" TagName="cortado" Count="1" />
+  <row Id="37" TagName="cappuccino" Count="2" />
+  <row Id="38" TagName="latte" Count="6" />
+  <row Id="39" TagName="milk" Count="10" ExcerptPostId="1626" WikiPostId="1625" />
+  <row Id="40" TagName="french-press" Count="14" ExcerptPostId="2044" WikiPostId="2043" />
+  <row Id="41" TagName="temperature" Count="6" ExcerptPostId="1568" WikiPostId="1567" />
+  <row Id="42" TagName="single-serving" Count="3" />
+  <row Id="46" TagName="filter" Count="10" ExcerptPostId="1744" WikiPostId="1743" />
+  <row Id="49" TagName="arabica" Count="3" />
+  <row Id="50" TagName="resting" Count="1" />
+  <row Id="51" TagName="sugar" Count="2" />
+  <row Id="52" TagName="nespresso" Count="4" />
+  <row Id="53" TagName="capsule" Count="3" />
+  <row Id="54" TagName="bean-varieties" Count="7" ExcerptPostId="1547" WikiPostId="1546" />
+  <row Id="55" TagName="portafilter" Count="1" />
+  <row Id="56" TagName="decaffeinated" Count="6" ExcerptPostId="1681" WikiPostId="1680" />
+  <row Id="57" TagName="moka" Count="15" ExcerptPostId="370" WikiPostId="369" />
+  <row Id="58" TagName="starbucks" Count="3" />
+  <row Id="59" TagName="keurig" Count="5" />
+  <row Id="61" TagName="jacobs" Count="1" />
+  <row Id="62" TagName="specialty" Count="1" />
+  <row Id="63" TagName="kopiluwak" Count="3" ExcerptPostId="1636" WikiPostId="1635" />
+  <row Id="66" TagName="induction" Count="4" />
+  <row Id="67" TagName="digestion" Count="3" />
+  <row Id="68" TagName="la-pavoni" Count="1" />
+  <row Id="69" TagName="presentation" Count="1" />
+  <row Id="70" TagName="aging" Count="1" />
+  <row Id="71" TagName="age" Count="1" />
+  <row Id="73" TagName="tradition" Count="2" />
+  <row Id="74" TagName="cup" Count="3" ExcerptPostId="360" WikiPostId="359" />
+  <row Id="75" TagName="pixie" Count="1" />
+  <row Id="76" TagName="tasting" Count="1" />
+  <row Id="77" TagName="vocabulary" Count="1" />
+  <row Id="78" TagName="palate" Count="1" />
+  <row Id="80" TagName="turkish" Count="4" ExcerptPostId="1746" WikiPostId="1745" />
+  <row Id="81" TagName="boiling" Count="1" />
+  <row Id="82" TagName="chemistry" Count="2" />
+  <row Id="83" TagName="acids" Count="2" />
+  <row Id="84" TagName="steamed-milk" Count="3" />
+  <row Id="85" TagName="foamed-milk" Count="2" />
+  <row Id="86" TagName="identify-this" Count="2" />
+  <row Id="87" TagName="concentrate" Count="1" />
+  <row Id="88" TagName="quality" Count="2" />
+  <row Id="89" TagName="descaling" Count="1" />
+  <row Id="91" TagName="siphon" Count="2" />
+  <row Id="92" TagName="syphon" Count="2" />
+  <row Id="93" TagName="vacuum-coffee-maker" Count="2" />
+  <row Id="94" TagName="mouthfeel" Count="2" />
+  <row Id="95" TagName="mixing" Count="1" />
+  <row Id="96" TagName="equipment" Count="22" ExcerptPostId="362" WikiPostId="361" />
+  <row Id="97" TagName="peaberry" Count="1" />
+  <row Id="98" TagName="virtuoline" Count="1" />
+  <row Id="99" TagName="zero-gravity" Count="1" />
+  <row Id="100" TagName="biology" Count="1" />
+  <row Id="101" TagName="confectionary" Count="1" />
+  <row Id="102" TagName="liqueur" Count="1" />
+  <row Id="103" TagName="pressure" Count="1" />
+  <row Id="104" TagName="reheating" Count="1" />
+  <row Id="105" TagName="iced-coffee" Count="4" />
+  <row Id="106" TagName="grounds" Count="3" />
+  <row Id="107" TagName="recycling" Count="3" />
+  <row Id="108" TagName="flavored-coffee" Count="6" />
+  <row Id="110" TagName="coffee-bloom" Count="4" />
+  <row Id="112" TagName="sorting" Count="1" />
+  <row Id="114" TagName="latte-art" Count="5" />
+  <row Id="115" TagName="3-d-latte-art" Count="1" />
+  <row Id="116" TagName="pods" Count="2" ExcerptPostId="354" WikiPostId="353" />
+  <row Id="117" TagName="accidents" Count="1" ExcerptPostId="375" WikiPostId="374" />
+  <row Id="118" TagName="diner" Count="1" />
+  <row Id="119" TagName="cold-brew" Count="11" ExcerptPostId="2046" WikiPostId="2045" />
+  <row Id="121" TagName="terminology" Count="2" />
+  <row Id="122" TagName="instant" Count="6" />
+  <row Id="123" TagName="cholesterol" Count="1" />
+  <row Id="125" TagName="manufacturing" Count="1" />
+  <row Id="126" TagName="percolator" Count="1" />
+  <row Id="127" TagName="nel-drip" Count="1" />
+  <row Id="129" TagName="yemenite-coffee" Count="1" />
+  <row Id="131" TagName="nescafe" Count="1" />
+  <row Id="133" TagName="melange" Count="1" />
+  <row Id="134" TagName="turkish-coffee" Count="4" />
+  <row Id="136" TagName="greek-coffee" Count="1" />
+  <row Id="137" TagName="egg-coffee" Count="2" />
+  <row Id="138" TagName="paper-filter" Count="7" ExcerptPostId="1773" WikiPostId="1772" />
+  <row Id="139" TagName="coffee-berries" Count="2" />
+  <row Id="140" TagName="history" Count="3" />
+  <row Id="141" TagName="biscotti" Count="1" />
+  <row Id="142" TagName="food" Count="3" />
+  <row Id="143" TagName="extraction" Count="7" />
+  <row Id="145" TagName="trade-association" Count="2" ExcerptPostId="1592" WikiPostId="1591" />
+  <row Id="146" TagName="smell" Count="1" />
+  <row Id="147" TagName="ristretto" Count="1" />
+  <row Id="148" TagName="chemex" Count="1" />
+  <row Id="150" TagName="technique" Count="1" />
+  <row Id="151" TagName="coffee-machines" Count="1" />
+  <row Id="152" TagName="frothed-milk" Count="1" />
+  <row Id="153" TagName="recipe" Count="1" />
+  <row Id="155" TagName="coffee-blends" Count="2" />
+  <row Id="156" TagName="cheese" Count="1" />
+  <row Id="157" TagName="pairing" Count="1" />
+  <row Id="158" TagName="home-roasting" Count="1" />
+  <row Id="159" TagName="sr500" Count="1" />
+  <row Id="160" TagName="processing" Count="1" />
+  <row Id="161" TagName="blends" Count="1" />
+</tags>
