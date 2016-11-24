@@ -11,6 +11,13 @@ In [the introduction](https://tomkerkhove.ghost.io/2015/11/28/analyzing-stackexc
 3. Analyzing the data with Azure Data Lake Analytics
 4. Visualizing the data with Power BI
 
+---------------------------------------
+
+The blog post series is currently on hold but you can browse all the scripts.
+*This is based on an old SDK so there might be compatibility issues*
+
+---------------------------------------
+
 # Getting the StackExchange Data Dump
 Stack Exchange has made their data available from all their websites under [Creative Commons](http://creativecommons.org/licenses/by-sa/3.0/) license. It includes data about users, posts, comments, votes, etc for every single site.
 
