@@ -26,10 +26,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Aggregation" />
+    <Folder Include="Reports" />
   </ItemGroup>
   <ItemGroup>
     <Script Include="Aggregation\AggregateBadges.usql">
-      <UseLocalComputeAccount>false</UseLocalComputeAccount>
+      <UseLocalComputeAccount>true</UseLocalComputeAccount>
       <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
       <LocalDatabase>master</LocalDatabase>
       <LocalSchema>dbo</LocalSchema>
@@ -100,6 +101,15 @@
       <ClusterDatabase>stackexchange</ClusterDatabase>
       <ClusterSchema>dbo</ClusterSchema>
     </Script>
+    <Script Include="Reports\UserAndLocationRelationReport.usql">
+      <UseLocalComputeAccount>false</UseLocalComputeAccount>
+      <LocalComputeAccount>localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>codito</ClusterComputeAccount>
+      <ClusterDatabase>master</ClusterDatabase>
+      <ClusterSchema>dbo</ClusterSchema>
+    </Script>
   </ItemGroup>
   <ItemGroup>
     <ScriptCode Include="Aggregation\AggregateBadges.usql.cs">
@@ -125,6 +135,9 @@
     </ScriptCode>
     <ScriptCode Include="Aggregation\AggregateVotes.usql.cs">
       <DependentUpon>Aggregation\AggregateVotes.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="Reports\UserAndLocationRelationReport.usql.cs">
+      <DependentUpon>Reports\UserAndLocationRelationReport.usql</DependentUpon>
     </ScriptCode>
   </ItemGroup>
 </Project>
