@@ -6,7 +6,7 @@ This repository contains all the code & scripts for my 'Analyzing StackExchange 
 
 During the talk I used a StackExchange data dump to demo the loading, storing, processing and visualizing data with Azure Data Lake Store, Data Lake Analytics & Power BI.
 
-![Demo Scenario](./media/demo-architecture.png)
+![Demo Scenario](./media/Demo-Architecture.png)
 
 # Getting the data sets
 ## StackExchange
