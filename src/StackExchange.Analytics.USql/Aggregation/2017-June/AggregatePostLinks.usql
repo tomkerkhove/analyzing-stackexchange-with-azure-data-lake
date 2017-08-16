@@ -1,0 +1,14 @@
+﻿REFERENCE ASSEMBLY [StackExchange.Analytics.Extensibility.Extractors];
+
+@inputRows = EXTRACT Source string,
+                     Id int,
+                     CreationDate DateTime,
+                     PostId int,
+                     RelatedPostId int,
+                     LinkTypeId int
+              FROM @"swebhdfs://stackexchange.azuredatalakestore.net/2017-june/{Source}/PostLinks.xml"
+              USING new StackExchange.Analytics.Extensibility.Extractors.XmlExtractor();
+              
+OUTPUT @inputRows
+TO "/aggregated-data/2017/06/post-links.csv"
+USING Outputters.Csv(Encoding.UTF8);

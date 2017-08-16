@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tags>
+  <row Id="1" TagName="deep-network" Count="37" ExcerptPostId="1797" WikiPostId="1796" />
+  <row Id="2" TagName="generalization" Count="3" />
+  <row Id="4" TagName="neurons" Count="5" />
+  <row Id="6" TagName="mindstorms" Count="1" ExcerptPostId="30" WikiPostId="29" />
+  <row Id="8" TagName="intelligent-agent" Count="17" ExcerptPostId="1765" WikiPostId="1764" />
+  <row Id="9" TagName="philosophy" Count="36" ExcerptPostId="2551" WikiPostId="2550" />
+  <row Id="12" TagName="fuzzy-logic" Count="6" ExcerptPostId="252" WikiPostId="251" />
+  <row Id="13" TagName="neural-networks" Count="179" ExcerptPostId="1555" WikiPostId="1554" />
+  <row Id="14" TagName="image-recognition" Count="44" ExcerptPostId="1557" WikiPostId="1556" />
+  <row Id="15" TagName="turing-test" Count="12" ExcerptPostId="1282" WikiPostId="1281" />
+  <row Id="16" TagName="strong-ai" Count="26" />
+  <row Id="17" TagName="weak-ai" Count="4" />
+  <row Id="18" TagName="definitions" Count="20" ExcerptPostId="1637" WikiPostId="1636" />
+  <row Id="19" TagName="singularity" Count="6" />
+  <row Id="21" TagName="self-learning" Count="19" />
+  <row Id="22" TagName="overfitting" Count="3" />
+  <row Id="23" TagName="optimization" Count="10" />
+  <row Id="25" TagName="emotional-intelligence" Count="14" ExcerptPostId="1802" WikiPostId="1801" />
+  <row Id="26" TagName="genetic-algorithms" Count="26" ExcerptPostId="1661" WikiPostId="1660" />
+  <row Id="27" TagName="machine-learning" Count="135" ExcerptPostId="1344" WikiPostId="1343" />
+  <row Id="32" TagName="terminology" Count="14" />
+  <row Id="34" TagName="markov-chain" Count="5" />
+  <row Id="35" TagName="probabilistic" Count="4" />
+  <row Id="36" TagName="performance" Count="5" />
+  <row Id="37" TagName="hidden-layers" Count="7" />
+  <row Id="39" TagName="history" Count="18" ExcerptPostId="1566" WikiPostId="1565" />
+  <row Id="44" TagName="models" Count="12" />
+  <row Id="46" TagName="legal" Count="6" />
+  <row Id="47" TagName="programming-languages" Count="9" ExcerptPostId="1278" WikiPostId="1277" />
+  <row Id="48" TagName="lisp" Count="2" ExcerptPostId="1721" WikiPostId="1720" />
+  <row Id="50" TagName="statistical-ai" Count="3" />
+  <row Id="53" TagName="heuristics" Count="8" ExcerptPostId="2686" WikiPostId="2685" />
+  <row Id="54" TagName="search" Count="9" ExcerptPostId="2608" WikiPostId="2607" />
+  <row Id="55" TagName="chess" Count="3" ExcerptPostId="1669" WikiPostId="1668" />
+  <row Id="56" TagName="comparison" Count="12" ExcerptPostId="1693" WikiPostId="1692" />
+  <row Id="58" TagName="unsupervised-learning" Count="11" ExcerptPostId="1652" WikiPostId="1651" />
+  <row Id="63" TagName="classical-ai" Count="2" />
+  <row Id="65" TagName="agi" Count="17" ExcerptPostId="1331" WikiPostId="1330" />
+  <row Id="66" TagName="declarative-programming" Count="1" ExcerptPostId="260" WikiPostId="259" />
+  <row Id="67" TagName="gofai" Count="5" />
+  <row Id="69" TagName="symbolic-computing" Count="5" />
+  <row Id="70" TagName="algorithm" Count="49" ExcerptPostId="1276" WikiPostId="1275" />
+  <row Id="72" TagName="self-driving" Count="15" ExcerptPostId="1559" WikiPostId="1558" />
+  <row Id="73" TagName="decision-theory" Count="10" />
+  <row Id="74" TagName="incompleteness-theorems" Count="2" ExcerptPostId="257" WikiPostId="256" />
+  <row Id="77" TagName="boltzmann-machine" Count="4" />
+  <row Id="81" TagName="efficiency" Count="2" />
+  <row Id="82" TagName="ultraintelligent-machine" Count="7" />
+  <row Id="83" TagName="hypercomputation" Count="2" />
+  <row Id="84" TagName="recurrent-neural-networks" Count="15" />
+  <row Id="86" TagName="halting-problem" Count="2" />
+  <row Id="87" TagName="training" Count="21" ExcerptPostId="1647" WikiPostId="1646" />
+  <row Id="88" TagName="deep-learning" Count="81" ExcerptPostId="2533" WikiPostId="2532" />
+  <row Id="89" TagName="conv-neural-network" Count="38" ExcerptPostId="1793" WikiPostId="1792" />
+  <row Id="90" TagName="deepdream" Count="2" ExcerptPostId="1675" WikiPostId="1674" />
+  <row Id="92" TagName="neural-doodle" Count="2" />
+  <row Id="94" TagName="math" Count="7" />
+  <row Id="95" TagName="pattern-recognition" Count="5" />
+  <row Id="96" TagName="natural-language" Count="26" ExcerptPostId="1347" WikiPostId="1346" />
+  <row Id="99" TagName="computer-vision" Count="15" />
+  <row Id="102" TagName="quantum-computing" Count="3" ExcerptPostId="1804" WikiPostId="1803" />
+  <row Id="103" TagName="handwritten-characters" Count="1" ExcerptPostId="195" WikiPostId="194" />
+  <row Id="107" TagName="new-ai" Count="3" />
+  <row Id="109" TagName="nlp" Count="21" ExcerptPostId="1680" WikiPostId="1679" />
+  <row Id="110" TagName="wordvector" Count="2" />
+  <row Id="112" TagName="classification" Count="28" ExcerptPostId="1767" WikiPostId="1766" />
+  <row Id="113" TagName="knowledge-representation" Count="12" />
+  <row Id="114" TagName="time" Count="2" />
+  <row Id="115" TagName="embodied-cognition" Count="3" />
+  <row Id="119" TagName="intelligence-testing" Count="15" ExcerptPostId="1800" WikiPostId="1799" />
+  <row Id="120" TagName="ethics" Count="11" />
+  <row Id="121" TagName="research" Count="42" ExcerptPostId="1634" WikiPostId="1633" />
+  <row Id="122" TagName="chat-bots" Count="13" ExcerptPostId="2465" WikiPostId="2464" />
+  <row Id="123" TagName="human-inspired" Count="5" />
+  <row Id="124" TagName="text-summarization" Count="2" />
+  <row Id="126" TagName="watson" Count="7" ExcerptPostId="1586" WikiPostId="1585" />
+  <row Id="127" TagName="storage" Count="3" />
+  <row Id="128" TagName="lexical-recognition" Count="3" ExcerptPostId="1284" WikiPostId="1283" />
+  <row Id="130" TagName="ai-community" Count="7" />
+  <row Id="131" TagName="cyborg" Count="2" />
+  <row Id="133" TagName="mlp" Count="3" ExcerptPostId="2893" WikiPostId="2892" />
+  <row Id="135" TagName="hardware" Count="6" />
+  <row Id="136" TagName="problem-solving" Count="6" ExcerptPostId="263" WikiPostId="262" />
+  <row Id="137" TagName="world-knowledge" Count="5" ExcerptPostId="255" WikiPostId="254" />
+  <row Id="138" TagName="backpropagation" Count="9" />
+  <row Id="139" TagName="learning-theory" Count="2" />
+  <row Id="140" TagName="artificial-neuron" Count="7" />
+  <row Id="141" TagName="signal-processing" Count="4" />
+  <row Id="146" TagName="implementation" Count="7" />
+  <row Id="150" TagName="applications" Count="9" />
+  <row Id="155" TagName="ai-design" Count="52" />
+  <row Id="166" TagName="ocr" Count="5" />
+  <row Id="169" TagName="monte-carlo-search" Count="6" />
+  <row Id="172" TagName="gradient-descent" Count="2" ExcerptPostId="2017" WikiPostId="2016" />
+  <row Id="177" TagName="robots" Count="7" ExcerptPostId="1474" WikiPostId="1473" />
+  <row Id="180" TagName="architecture" Count="3" />
+  <row Id="181" TagName="prediction" Count="10" />
+  <row Id="186" TagName="neuromorphic-computing" Count="5" />
+  <row Id="187" TagName="friendly-ai" Count="2" />
+  <row Id="188" TagName="death" Count="4" ExcerptPostId="1817" WikiPostId="1816" />
+  <row Id="189" TagName="reinforcement-learning" Count="34" />
+  <row Id="194" TagName="healthcare" Count="3" />
+  <row Id="197" TagName="biology" Count="3" />
+  <row Id="198" TagName="deep-blue" Count="2" />
+  <row Id="199" TagName="social" Count="4" />
+  <row Id="200" TagName="reasoning" Count="4" />
+  <row Id="201" TagName="multi-agent-systems" Count="5" />
+  <row Id="202" TagName="minimax" Count="3" />
+  <row Id="203" TagName="game-theory" Count="11" ExcerptPostId="1550" WikiPostId="1549" />
+  <row Id="206" TagName="datasets" Count="9" />
+  <row Id="208" TagName="real-time" Count="5" />
+  <row Id="209" TagName="nearest-neighbor" Count="2" />
+  <row Id="210" TagName="linear-regression" Count="4" />
+  <row Id="214" TagName="action-recognition" Count="3" />
+  <row Id="216" TagName="lstm" Count="8" ExcerptPostId="2720" WikiPostId="2719" />
+  <row Id="219" TagName="cars" Count="10" ExcerptPostId="1583" WikiPostId="1582" />
+  <row Id="220" TagName="gaming" Count="22" ExcerptPostId="1543" WikiPostId="1542" />
+  <row Id="221" TagName="branching-factors" Count="2" />
+  <row Id="222" TagName="deepmind" Count="2" />
+  <row Id="226" TagName="language-processing" Count="11" />
+  <row Id="228" TagName="genetic-programming" Count="5" ExcerptPostId="1511" WikiPostId="1510" />
+  <row Id="229" TagName="cyberterrorism" Count="2" />
+  <row Id="230" TagName="security" Count="4" />
+  <row Id="231" TagName="challenges" Count="2" />
+  <row Id="232" TagName="control-problem" Count="9" />
+  <row Id="234" TagName="prolog" Count="2" />
+  <row Id="236" TagName="evolutionary-algorithms" Count="13" ExcerptPostId="2652" WikiPostId="2651" />
+  <row Id="239" TagName="computer-programming" Count="6" ExcerptPostId="1564" WikiPostId="1563" />
+  <row Id="240" TagName="object-recognition" Count="6" />
+  <row Id="242" TagName="keras" Count="3" ExcerptPostId="1573" WikiPostId="1572" />
+  <row Id="249" TagName="learning-algorithms" Count="10" />
+  <row Id="251" TagName="path-planning" Count="5" />
+  <row Id="252" TagName="robotics" Count="5" />
+  <row Id="265" TagName="detecting-patterns" Count="4" />
+  <row Id="266" TagName="asimovs-laws" Count="2" ExcerptPostId="1673" WikiPostId="1672" />
+  <row Id="270" TagName="nasa" Count="3" />
+  <row Id="272" TagName="deepdreaming" Count="3" ExcerptPostId="1677" WikiPostId="1676" />
+  <row Id="273" TagName="computational-linguistics" Count="4" ExcerptPostId="1682" WikiPostId="1681" />
+  <row Id="274" TagName="structured-data" Count="4" ExcerptPostId="1684" WikiPostId="1683" />
+  <row Id="276" TagName="voice-recognition" Count="3" />
+  <row Id="282" TagName="reference-request" Count="2" />
+  <row Id="283" TagName="logic" Count="6" />
+  <row Id="284" TagName="thought-vectors" Count="2" />
+  <row Id="285" TagName="ai-box" Count="3" />
+  <row Id="287" TagName="human-like" Count="14" />
+  <row Id="288" TagName="cognitive-science" Count="4" />
+  <row Id="291" TagName="cnn" Count="8" />
+  <row Id="292" TagName="tensorflow" Count="8" />
+  <row Id="294" TagName="rights" Count="1" />
+  <row Id="295" TagName="expert-system" Count="2" />
+  <row Id="297" TagName="mnist" Count="1" />
+  <row Id="298" TagName="virtual-reality" Count="1" />
+  <row Id="299" TagName="untagged" Count="5" />
+  <row Id="300" TagName="ai-winter" Count="1" />
+  <row Id="301" TagName="swarm-intelligence" Count="1" />
+  <row Id="302" TagName="software-architecture" Count="2" />
+  <row Id="303" TagName="game-ai" Count="4" />
+  <row Id="304" TagName="hci" Count="1" ExcerptPostId="3129" WikiPostId="3128" />
+  <row Id="305" TagName="computing" Count="1" />
+  <row Id="306" TagName="google" Count="2" />
+  <row Id="307" TagName="torch" Count="1" />
+  <row Id="308" TagName="notation" Count="1" />
+</tags>

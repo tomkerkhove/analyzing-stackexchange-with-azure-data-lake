@@ -1,0 +1,141 @@
+﻿ /*
+ * Extracting the input data
+ */
+@users =
+    EXTRACT Source string,
+            Id int,
+            DisplayName string,
+            Reputation int,
+            CreationDate DateTime,
+            LastAccessDate DateTime,
+            Location string,
+            AboutMe string,
+            Views int,            
+            UpVotes int,
+            DownVotes int,
+            Age int,
+            AccountId int,
+            ProfileImageUrl string,
+            WebsiteUrl string
+    FROM "/aggregated-data/2017/06/users.csv"
+    USING Extractors.Csv();
+
+@countries =
+    EXTRACT Name string,
+            Alpha2Code string,
+            Alpha3Code string,
+            CountryCode string,
+            IsoCode string,
+            Region string,
+            SubRegion string,
+            RegionCode string,
+            SubRegionCode string
+    FROM "/reference-data/geolocation/ISO-3166-Countries-with-Regional-Codes.csv"
+    USING Extractors.Csv();
+
+/*
+    Cleanse data
+*/
+@cleansedUsers = SELECT Source,
+                        Id,
+                        DisplayName,
+                        Reputation,
+                        CreationDate,
+                        LastAccessDate,
+                        Location.ToLowerInvariant().Trim() AS Location,
+                        AboutMe,
+                        Views,
+                        UpVotes,
+                        DownVotes,
+                        Age,
+                        AccountId ,
+                        ProfileImageUrl,
+                        WebsiteUrl
+                    FROM @users;
+
+@cleansedCountries = SELECT Name.ToLowerInvariant().Trim() AS Name,
+                             Alpha2Code,
+                             Alpha3Code,
+                             CountryCode,
+                             IsoCode,
+                             Region.ToLowerInvariant().Trim() AS Region,
+                             SubRegion.ToLowerInvariant().Trim() AS SubRegion,
+                             RegionCode,
+                             SubRegionCode
+                      FROM @countries;
+
+/*
+ * Analyse the data
+ */
+@usersRegionMap =
+    SELECT country.Name AS Location,
+           (country.Region == ""? "Not/Applicable" : country.Region) AS Region,
+           (country.SubRegion == ""? "Not/Applicable" : country.SubRegion) AS SubRegion,
+           COUNT( * ) AS TotalCount,
+           AVG(Reputation) AS AvgReputation,
+           AVG(Views) AS AvgViews,
+           AVG(UpVotes) AS AvgUpVotes,
+           AVG(DownVotes) AS AvgDownVotes
+    FROM @cleansedUsers AS user
+         JOIN
+             @cleansedCountries AS country
+         ON user.Location == country.Name
+    GROUP BY country.Region,
+             country.SubRegion,
+             country.Name;
+
+@usersLocationRelation =
+    SELECT "All" AS Outcome,
+           COUNT( * ) AS TotalCount,
+           AVG(Reputation) AS AvgReputation,
+           AVG(Views) AS AvgViews,
+           AVG(UpVotes) AS AvgUpVotes,
+           AVG(DownVotes) AS AvgDownVotes
+    FROM @cleansedUsers AS user
+    UNION
+    SELECT "Not Found" AS Outcome,
+           COUNT( * ) AS TotalCount,
+           AVG(Reputation) AS AvgReputation,
+           AVG(Views) AS AvgViews,
+           AVG(UpVotes) AS AvgUpVotes,
+           AVG(DownVotes) AS AvgDownVotes
+    FROM @cleansedUsers AS user
+         CROSS JOIN
+             @cleansedCountries AS country
+    WHERE string.IsNullOrWhiteSpace(user.Location) == false AND user.Location.Contains(country.Name) == false
+    UNION
+    SELECT "Not Specified" AS Outcome,
+           COUNT( * ) AS TotalCount,
+           AVG(Reputation) AS AvgReputation,
+           AVG(Views) AS AvgViews,
+           AVG(UpVotes) AS AvgUpVotes,
+           AVG(DownVotes) AS AvgDownVotes
+    FROM @cleansedUsers AS user
+    WHERE string.IsNullOrWhiteSpace(user.Location)
+    UNION
+    SELECT "Found" AS Outcome,
+           COUNT( * ) AS TotalCount,
+           AVG(Reputation) AS AvgReputation,
+           AVG(Views) AS AvgViews,
+           AVG(UpVotes) AS AvgUpVotes,
+           AVG(DownVotes) AS AvgDownVotes
+    FROM @cleansedUsers AS user
+         CROSS JOIN
+             @cleansedCountries AS country
+    WHERE user.Location.Contains(country.Name);
+
+/*
+ * Output analytics data to the store
+ */
+OUTPUT @usersLocationRelation
+TO "reports/users-location-relation.csv"
+ORDER BY TotalCount DESC
+USING Outputters.Csv();
+
+OUTPUT @usersRegionMap
+TO "reports/users-region-country.csv"
+ORDER BY Region,
+         SubRegion,
+         Location,
+         TotalCount DESC
+USING Outputters.Csv();

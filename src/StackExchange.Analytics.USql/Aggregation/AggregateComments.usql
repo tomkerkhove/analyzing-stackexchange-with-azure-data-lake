@@ -1,0 +1,17 @@
+﻿REFERENCE ASSEMBLY [StackExchange.Analytics.Extensibility.Extractors];
+
+@inputRows = EXTRACT DumpName string,
+                     Source string,
+                     Id int,
+                     PostId int,
+                     Score int,
+                     Text string,
+                     CreationDate DateTime,
+                     UserId int,
+                     UserDisplayName string
+              FROM @"swebhdfs://stackexchange.azuredatalakestore.net/{DumpName}/{Source}/Comments.xml"
+              USING new StackExchange.Analytics.Extensibility.Extractors.XmlExtractor();
+              
+OUTPUT @inputRows
+TO "/aggregated-data/comments.csv"
+USING Outputters.Csv(Encoding.UTF8);

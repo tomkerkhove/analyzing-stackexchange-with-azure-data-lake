@@ -1,0 +1,15 @@
+﻿REFERENCE ASSEMBLY [StackExchange.Analytics.Extensibility.Extractors];
+
+@inputRows = EXTRACT Source string,
+                     Id int,
+                     UserId int,
+                     Name string,
+                     Date DateTime,
+                     Class int,
+                     TagBased bool
+              FROM @"swebhdfs://stackexchange.azuredatalakestore.net/2017-june/{Source}/Badges.xml"
+              USING new StackExchange.Analytics.Extensibility.Extractors.XmlExtractor();
+              
+OUTPUT @inputRows
+TO "/aggregated-data/2017/06/badges.csv"
+USING Outputters.Csv(Encoding.UTF8);

@@ -1,0 +1,19 @@
+﻿REFERENCE ASSEMBLY [StackExchange.Analytics.Extensibility.Extractors];
+
+@inputRows = EXTRACT DumpName string,
+                     Source string,
+                     Id int,
+                     PostHistoryTypeId int,
+                     PostId int,
+                     RevisionGuid Guid,
+                     CreationDate DateTime,
+                     UserId int,
+                     Text string,
+                     Comment string,
+                     UserDisplayName string
+              FROM @"swebhdfs://stackexchange.azuredatalakestore.net/{DumpName}/{Source}/PostHistory.xml"
+              USING new StackExchange.Analytics.Extensibility.Extractors.XmlExtractor();
+              
+OUTPUT @inputRows
+TO "/aggregated-data/post-history.csv"
+USING Outputters.Csv(Encoding.UTF8);

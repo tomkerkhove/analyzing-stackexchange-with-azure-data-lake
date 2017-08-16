@@ -1,0 +1,24 @@
+﻿REFERENCE ASSEMBLY [StackExchange.Analytics.Extensibility.Extractors];
+
+@inputRows = EXTRACT Source string,
+                     Id int,
+                     DisplayName string,
+                     Reputation int,
+                     CreationDate DateTime,
+                     LastAccessDate DateTime,
+                     Location string,
+                     AboutMe string,
+                     Views int,
+                     UpVotes int,
+                     DownVotes int,
+                     Age int,
+                     AccountId int,
+                     ProfileImageUrl string,
+                     WebsiteUrl string
+              FROM @"swebhdfs://stackexchange.azuredatalakestore.net/2017-june/{Source}/Users.xml"
+              USING new StackExchange.Analytics.Extensibility.Extractors.XmlExtractor();
+
+              
+OUTPUT @inputRows
+TO "/aggregated-data/2017/06/users.csv"
+USING Outputters.Csv(Encoding.UTF8);
