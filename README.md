@@ -1,4 +1,4 @@
-Analyzing StackExchange data with Azure Data Lake
+Analyzing StackExchange with Azure Data Lake
 ============================================
 This repository contains all the code & scripts for my 'Analyzing StackExchange data with Azure Data Lake' series.
 
