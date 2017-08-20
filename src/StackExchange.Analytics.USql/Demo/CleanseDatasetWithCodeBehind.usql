@@ -1,0 +1,20 @@
+﻿REFERENCE ASSEMBLY [StackExchange.Analytics.Extensibility.Extractors];
+
+@inputRows = EXTRACT Id int,
+                     TagName string,
+                     Count int,
+                     ExcerptPostId int,
+                     WikiPostId int
+              FROM @"/demo/coffee.stackexchange.com/Tags.xml"
+              USING new StackExchange.Analytics.Extensibility.Extractors.XmlExtractor();
+              
+@cleansedTags = SELECT Id,
+                       StackExchange.Analytics.USql.DataCleansing.CleanseString(TagName) AS TagName,
+                       Count,
+                       ExcerptPostId,
+                       WikiPostId
+                FROM @inputRows;
+              
+OUTPUT @cleansedTags
+TO "/demo/output/cleansing/tags.csv"
+USING Outputters.Csv(Encoding.UTF8);

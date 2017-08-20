@@ -1,0 +1,15 @@
+﻿REFERENCE ASSEMBLY [StackExchange.Analytics.Extensibility.Extractors];
+
+@inputRows = EXTRACT DumpName string,
+                     Source string,
+                     Id int,
+                     PostId int,
+                     VoteTypeId int,
+                     UserId int,
+                     CreationDate DateTime
+              FROM @"swebhdfs://stackexchange.azuredatalakestore.net/{DumpName}/{Source}/Votes.xml"
+              USING new StackExchange.Analytics.Extensibility.Extractors.XmlExtractor();
+              
+OUTPUT @inputRows
+TO "/aggregated-data/votes.csv"
+USING Outputters.Csv(Encoding.UTF8);

@@ -1,0 +1,15 @@
+﻿REFERENCE ASSEMBLY [StackExchange.Analytics.Extensibility.Extractors];
+
+@inputRows = EXTRACT DumpName string,
+                     Source string,
+                     Id int,
+                     TagName string,
+                     Count int,
+                     ExcerptPostId int,
+                     WikiPostId int
+              FROM @"swebhdfs://stackexchange.azuredatalakestore.net/{DumpName}/{Source}/Tags.xml"
+              USING new StackExchange.Analytics.Extensibility.Extractors.XmlExtractor();
+              
+OUTPUT @inputRows
+TO "/aggregated-data/tags.csv"
+USING Outputters.Csv(Encoding.UTF8);

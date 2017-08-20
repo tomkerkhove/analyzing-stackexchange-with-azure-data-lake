@@ -1,0 +1,3 @@
+﻿USE DATABASE [master];
+DROP ASSEMBLY IF EXISTS [StackExchange.Analytics.Extensibility.Extractors];
+CREATE ASSEMBLY [StackExchange.Analytics.Extensibility.Extractors] FROM "/custom-code/extractors/StackExchange.Analytics.Extensibility.Extractors.dll";

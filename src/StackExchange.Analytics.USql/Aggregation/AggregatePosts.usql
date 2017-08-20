@@ -1,0 +1,28 @@
+﻿REFERENCE ASSEMBLY [StackExchange.Analytics.Extensibility.Extractors];
+
+@inputRows = EXTRACT DumpName string,
+                     Source string,
+                     Id int,
+                     PostTypeId int,
+                     AcceptedAnswerId int,
+                     CreationDate DateTime,
+                     Score int,
+                     ViewCount int,
+                     Body string,
+                     OwnerUserId int,
+                     LastActivityDate DateTime,
+                     Title string,
+                     Tags string,
+                     AnswerCount int,
+                     FavoriteCount int,
+                     LastEditorUserId int,
+                     LastEditDate DateTime,
+                     ParentId int,
+                     ClosedDate DateTime,
+                     OwnerDisplayName string
+              FROM @"swebhdfs://stackexchange.azuredatalakestore.net/{DumpName}/{Source}/Posts.xml"
+              USING new StackExchange.Analytics.Extensibility.Extractors.XmlExtractor();
+              
+OUTPUT @inputRows
+TO "/aggregated-data/posts.csv"
+USING Outputters.Csv(Encoding.UTF8);
