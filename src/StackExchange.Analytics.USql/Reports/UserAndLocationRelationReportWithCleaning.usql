@@ -130,7 +130,7 @@
 OUTPUT @usersLocationRelation
 TO "reports/users-location-relation.csv"
 ORDER BY TotalCount DESC
-USING Outputters.Csv();
+USING Outputters.Csv(outputHeader: true);
 
 OUTPUT @usersRegionMap
 TO "reports/users-region-country.csv"
@@ -138,4 +138,4 @@ ORDER BY Region,
          SubRegion,
          Location,
          TotalCount DESC
-USING Outputters.Csv();
+USING Outputters.Csv(outputHeader: true);
