@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -25,8 +24,6 @@
     <Folder Include="Aggregation" />
     <Folder Include="Aggregation\2017-June" />
     <Folder Include="Demo" />
-    <Folder Include="GDPR" />
-    <Folder Include="GDPR\User-Data-Consolidation" />
     <Folder Include="Reports" />
     <Folder Include="Setup" />
   </ItemGroup>
@@ -49,7 +46,6 @@
     <Script Include="Aggregation\AggregateVotes.usql" />
     <Script Include="Demo\AggregateWithCorruptFile.usql" />
     <Script Include="Demo\CleanseDatasetWithCodeBehind.usql" />
-    <Script Include="GDPR\User-Data-Consolidation\FilterUsersOnDisplayName.usql" />
     <Script Include="Reports\UserAndLocationRelationReport.usql" />
     <Script Include="Reports\UserAndLocationRelationReportWithCleaning.usql" />
     <Script Include="Setup\RegisterCustomExtractor.usql" />
@@ -109,9 +105,6 @@
     <ScriptCode Include="Demo\CleanseDatasetWithCodeBehind.usql.cs">
       <DependentUpon>Demo\CleanseDatasetWithCodeBehind.usql</DependentUpon>
     </ScriptCode>
-    <ScriptCode Include="GDPR\User-Data-Consolidation\FilterUsersOnDisplayName.usql.cs">
-      <DependentUpon>GDPR\User-Data-Consolidation\FilterUsersOnDisplayName.usql</DependentUpon>
-    </ScriptCode>
     <ScriptCode Include="Reports\UserAndLocationRelationReport.usql.cs">
       <DependentUpon>Reports\UserAndLocationRelationReport.usql</DependentUpon>
     </ScriptCode>
@@ -122,8 +115,5 @@
       <DependentUpon>Setup\RegisterCustomExtractor.usql</DependentUpon>
     </ScriptCode>
   </ItemGroup>
-  <Import Project="$(AppData)\Microsoft\DataLake\MsBuild\1.0\Usql.targets" Condition="'$(BuildingInsideVisualStudio)' == 'true'" />
-  <!--target for CICD command line build added by project migration tool-->
-  <Import Project="USqlSDKBuild.targets" Condition="'$(BuildingInsideVisualStudio)' != 'true' And  Exists('USqlSDKBuild.targets')" />
-  <Import Project="$(USQLSDKPath)\USqlSDKBuild.targets" Condition="'$(BuildingInsideVisualStudio)' != 'true' And !Exists('USqlSDKBuild.targets') And '$(USQLSDKPath)' != '' And Exists('$(USQLSDKPath)\USqlSDKBuild.targets')" />
+  <Import Project="$(AppData)\Microsoft\DataLake\MsBuild\1.0\Usql.targets" />
 </Project>
